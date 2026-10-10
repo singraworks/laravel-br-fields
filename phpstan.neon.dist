@@ -1,0 +1,11 @@
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+
+    level: max
+
+    tmpDir: .build/phpstan

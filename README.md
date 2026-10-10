@@ -93,7 +93,7 @@ composer test:mutate    # mutation testing
 composer ci:check       # what CI runs
 ```
 
-Thresholds are in [`composer.json`](composer.json). Coverage needs [pcov](https://github.com/krakjoe/pcov) or Xdebug. CI runs the gate on PHP 8.4 and 8.5 with both the lowest and the highest dependency sets, which covers Laravel 12 and 13.
+Thresholds are in [`composer.json`](composer.json). Coverage needs [pcov](https://github.com/krakjoe/pcov) or Xdebug. CI runs the gate for every pairing of PHP 8.4 or 8.5 with Laravel 12 or 13, each against both the lowest and the highest dependency sets.
 
 ## License
 
